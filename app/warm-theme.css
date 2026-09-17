@@ -57,7 +57,7 @@ nav button { color: #7f675c; }
 .ingredient-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .ingredient-section textarea { background: #fffaf1; }
 .preference-actions, .form-actions { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 10px; margin-top: 18px; }
-.preference-actions button, .form-actions button { min-height: 44px; }
+.preference-actions button, .form-actions button { min-height: 44px; font-size: 13px; line-height: 1.4; }
 .preference-actions .refresh-button { margin-top: 0; }
 .mini-art, .empty > span { background: #f5d8ad; color: #8f3e2c; }
 .why { background: #fae3c4; }

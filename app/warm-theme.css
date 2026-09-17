@@ -56,6 +56,9 @@ nav button { color: #7f675c; }
 .ingredient-heading span { color: var(--muted); font-size: 11px; }
 .ingredient-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .ingredient-section textarea { background: #fffaf1; }
+.preference-actions, .form-actions { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 10px; margin-top: 18px; }
+.preference-actions button, .form-actions button { min-height: 44px; }
+.preference-actions .refresh-button { margin-top: 0; }
 .mini-art, .empty > span { background: #f5d8ad; color: #8f3e2c; }
 .why { background: #fae3c4; }
 .stars, .rating button:hover, .rating button:focus { color: #d99218; }
@@ -87,6 +90,7 @@ nav button { color: #7f675c; }
 .primary:disabled { cursor: not-allowed; opacity: .45; }
 @media (max-width: 720px) { .modal-form { max-height: 94vh; } .modal-actions { display: grid; grid-template-columns: 1fr 1fr; } .choice-row.sentiments button { flex-basis: 100%; } }
 @media (max-width: 720px) { .ingredient-heading { display: block; } .ingredient-heading span { display: block; margin-top: 4px; } .ingredient-grid { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .preference-actions, .form-actions { grid-template-columns: 1fr; } .preference-actions .primary, .form-actions .primary { grid-row: 1; } }
 
 .daily-plans { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--paper); box-shadow: 0 8px 26px rgba(91, 55, 36, .06); }
 .meal-table-head, .day-plan { display: grid; grid-template-columns: 82px repeat(3, minmax(0, 1fr)); }
